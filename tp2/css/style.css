@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+/**
+ * @author Louis-Philippe Roy <courriel>
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * 
+ *
+ */
+
+/* Normalize
+   ========================================================================== */
+   body{
+      margin: 0;
+   }
+
+/* Utilitaires
+   ========================================================================== */
+
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+   box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+   box-sizing: inherit;
+}
+
+img {
+   max-width: 100%;
+}
+img {
+   border-style: none;
+}
+/* NAV */
+
+.nav--header {
+   flex-wrap: wrap;
+}
+.nav {
+   font-family: 'Newa Cycle', sans-serif;
+   text-transform: uppercase;
+}
+.nav--header .nav__list {
+   width: 100%;
+}
+.nav__list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   justify-content: space-between;
+}
+header .nav--header, .nav__list {
+   display: flex;
+}
+
+/* écran large */
+@media (min-width: 600px){
+   .nav--header {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+   }
+}
+@media (min-width: 600px){
+   .nav--header .nav__list {
+      width: auto;
+   }
+}
+.nav__list-item {
+   margin: 0;
+   text-align: center;
+}
+
+li {
+   display: list-item;
+   text-align: -webkit-match-parent;
+}
+/* NAV Link */
+
+@media (min-width: 600px) {
+   .nav__link {
+      padding: 1rem;
+   }
+}
+.nav__link {
+   display: inline-block;
+   padding: auto;
+   text-decoration: none;
+}
+
+/* NAV LINK HOVER */
+.nav__link:hover, .nav--footer
+.nav__link:hover {
+   color: orangered;
+}
+
+/* NAV LOGO */
+
+.logo {
+   flex-grow: 1;
+   text-align: center;
+   transition: all 0.5s;
+}
+/* écran large */
+
+@media (min-width: 600px){
+   .logo {
+      max-width: 250px;
+   }
+}
+@media (min-width: 800px){
+   .logo {
+      max-width: 300px;
+   }
+}
+
+a {
+   background-color: transparent;
+}
+
+body {
+   background-image: url(../images/moroccan-flower.png);
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 300;
+   font-size: 1.4rem;
+   line-height: 2.375;
+}
+
+   @media(min-width:600px){ 
+   .layout-page{
+      max-width:1000px;
+      margin: auto; 
+   }
+}
+
+@media (min-width: 800px) {
+   body {
+      line-height: 1.75;
+      font-size: 1.6rem;
+   }
+}
+.layout-page{
+      padding:2rem 2rem 0; 
+      background-color: #fff;
+}
+header {
+   font-size: 1.4rem;
+}
+
+@media (min-width: 600px){
+   header {
+      min-height: 433px;
+      background-image: url(../images/photo-montage_1000.jpg);
+      background-position: 0 48px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      font-size: 1.6rem;
+   }
+}
+@media (min-width: 800px) {
+   header {
+      background-size: cover;
+   }
+}
+@media (min-width: 600px){
+   header picture {
+      display: none;
+   }
+}
+main {
+   display: block;
+}
+.introduction {
+   text-align: center;
+}
+.introduction h1 {
+   text-transform: uppercase;
+   margin-bottom: 0;
+}
+h1, h2 {
+   line-height: 1;
+}
+.introduction p {
+   font-size: 1.6rem;
+   text-align: justify;
+}
+@media (min-width: 600px){
+   .description {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+@media (min-width: 600px){
+   .description section {
+      flex: 1 0 30%;
+      margin: 1rem;
+   }
+}
+section {
+   display: block;
+}
+figure {
+   margin: 0;
+}
+figure {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1rem;
+   margin-inline-start: 40px;
+   margin-inline-end: 40px;
+}
+@media (min-width: 600px){
+   .encadres {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+@media (min-width: 600px){
+   .encadres__item {
+      flex: 1 0 40%;
+      background-color: #eeeeee;
+      padding: 1rem;
+   }
+}
+@media (min-width: 600px){
+   .encadres__item:last-child{
+      margin-left: 2rem;
+   }
+}
+
+/* footer */
+footer {
+   background-color: lightgray;
+   margin: 2rem 0 0;
+}
+
+/* nav footer */
+
+.nav--footer {
+   background-color: black;
+}
+.nav--footer .nav__link--active {
+   color: orangered;
+}
+.nav--footer .nav__link {
+   color: white;
+}
+.nav__link--active {
+   background-color: #dbe8ec;
+}
+.credits {
+   padding: 0 1rem;
+}
+.copyright {
+   text-align: center;
+   padding-bottom: 2rem;
+   margin-bottom: 0;
+} 
+small {
+   font-size: 80%;
+}
+
+
+
+
+
+   
+/* Charte typographique
+   ========================================================================== */
+/* Polices liées */
+/* copier ici l'instruction @import url('...'); proposé par Google Fonts */
+
+/* Base décimale */
+@import url('Roboto Condensed - Weight 300 Roboto Condensed - Weight 700 News Cycle'); 
+
+html{
+   font-size: 62.5%;
+}
+
+body {
+   /* Adapter la famille de polices selon le projet */
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 100;
+   /* 16px pour toutes les largeurs d'écran */
+   font-size: 1.6rem;
+   /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
+   line-height: 1.375;
+}
+@media (min-width: 600px) {
+   body {
+       line-height: 1.5;
+   }
+}
+@media (min-width: 800px) {
+   body {
+       line-height: 1.75;
+   }
+}
+
+h1,
+h2,
+h3,
+h4{
+   /* Adapter la famille de polices selon le projet */
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 500;
+}
+
+/* Hiérarchie responsive : plus proche = plus petit  &  plus loin = plus grand */
+h1 { /* = 32px */
+   font-size: 2.4rem;
+}
+@media (min-width: 600px) {
+   h1 { /* = 40px */
+       font-size: 2.4rem;
+   }
+}
+@media (min-width: 800px) {
+   h1 { /* = 48px */
+       font-size: 3.2rem;
+   }
+}
+
+h2 { /* = 24px */
+   font-size: 3rem;
+
+}
+@media (min-width: 600px) {
+   h2 { /* = 32px */
+       font-size: 1.8rem;
+   }
+}
+@media (min-width: 800px) {
+   h2 { /* = 36px */
+       font-size: 2.4rem;
+   }
+}
+
+h3 { /* = 18px */
+   font-size: 2.2rem;
+}
+@media (min-width: 600px) {
+   h3 {  /* = 24px */
+       font-size: 1.6rem;
+   }
+}
+@media (min-width: 800px) {
+   h3 { /* = 30px */
+       font-size: 1.8rem;
+   }
+}
+
+h4 { /* = 16px */
+   font-size: 1.4rem;
+}
+@media (min-width: 600px) {
+   h4{ /* = 18px */
+       font-size: 1.2rem;
+   }
+}
+@media (min-width: 800px) {
+   h4 { /* = 22px */
+       font-size: 1.4rem;
+   }
+}
+figcaption {
+   font-size: 1.2rem;
+}
