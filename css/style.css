@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('Roboto Condensed - Weight 300 Roboto Condensed - Weight 700 News Cycle');
+
 /**
  * @author Louis-Philippe Roy <courriel>
  *
@@ -7,8 +9,10 @@
  * Normalize
  * Utilitaires
  * Charte typographique
- * 
- *
+ * Mise en forme
+ *** ... COMPLÉTER la table des matières avec les titres de subdivision
+ *** footer
+ *** nav footer
  */
 
 /* Normalize
@@ -33,9 +37,11 @@ html {
 
 img {
    max-width: 100%;
-}
-img {
    border-style: none;
+}
+
+figure{
+   margin:0;
 }
 /* NAV */
 
@@ -207,13 +213,13 @@ section {
 figure {
    margin: 0;
 }
-figure {
+/*figure {
    display: block;
    margin-block-start: 1em;
    margin-block-end: 1rem;
    margin-inline-start: 40px;
    margin-inline-end: 40px;
-}
+}*/
 @media (min-width: 600px){
    .encadres {
       display: flex;
@@ -272,12 +278,7 @@ small {
    
 /* Charte typographique
    ========================================================================== */
-/* Polices liées */
-/* copier ici l'instruction @import url('...'); proposé par Google Fonts */
-
 /* Base décimale */
-@import url('Roboto Condensed - Weight 300 Roboto Condensed - Weight 700 News Cycle'); 
-
 html{
    font-size: 62.5%;
 }
